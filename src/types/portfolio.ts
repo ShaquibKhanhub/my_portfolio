@@ -38,6 +38,8 @@ export interface Skills {
   devops_cloud: string[];
   iot_hardware: string[];
   soft_skills: string[];
+  frontend: string[];
+  backend: string[];
 }
 
 export interface ProjectLink {
