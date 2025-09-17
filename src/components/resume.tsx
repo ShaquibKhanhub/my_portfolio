@@ -20,8 +20,7 @@ export function Resume() {
     lastUpdated: "March 2025",
     fileSize: "0.5 MB",
     previewImageSrc: "/resume_preview.png", // You'll need to add this image
-    downloadUrl:
-      "shaquib_khan.pdf", // Replace with the actual download URL
+    downloadUrl: "shaquib_khan.pdf", // Replace with the actual download URL
   };
 
   const handleDownload = () => {

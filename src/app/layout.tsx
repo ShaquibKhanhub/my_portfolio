@@ -1,5 +1,5 @@
 import { Analytics } from "@vercel/analytics/react";
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Inter } from "next/font/google";
 import { cn } from "@/lib/utils";
 import { ThemeProvider } from "@/components/theme-provider";
@@ -97,13 +97,12 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://your-portfolio-url.com", // 🔴 update
   },
-
-  viewport: {
-    width: "device-width",
-    initialScale: 1,
-  },
 };
 
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+};
 export default function RootLayout({
   children,
 }: Readonly<{

@@ -106,7 +106,7 @@ const Skills = () => {
       initial={{ scale: 0.98, opacity: 0 }}
       animate={{ scale: 1, opacity: 1 }}
       transition={{ duration: 0.6, ease: [0.19, 1, 0.22, 1] }}
-      className="mx-auto w-full max-w-5xl rounded-4xl px-4 sm:px-6 border dark:bg-neutral-900"
+      className="mx-auto w-full max-w-5xl rounded-4xl px-4 sm:px-6 dar:border dark:bg-neutral-900"
     >
       <Card className="w-full border-none px-0 pb-8 sm:pb-12 shadow-none">
         <CardHeader className="px-0 pb-1">
