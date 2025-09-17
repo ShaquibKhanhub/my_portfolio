@@ -67,7 +67,7 @@ const AvailabilityCard = ({ data }: AvailabilityCardProps) => {
               height={64}
               src="/1.png"
               alt="Shaquib's avatar"
-              className="h-full w-full object-cover object-[center_top_-5%] scale-95"
+              className="h-full w-full object-cover object-[center_top_-5%] scale-95 "
             />
           </div>
           <div>

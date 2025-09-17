@@ -143,7 +143,7 @@ export const Carousel = ({
           <div
             className={cn(
               'flex flex-row justify-start gap-4',
-              'mx-auto max-w-7xl' // remove max-w-4xl if you want the carousel to span the full width of its container
+              'mx-auto max-w-7xl ' // remove max-w-4xl if you want the carousel to span the full width of its container
             )}
           >
             {items.map((item, index) => (
@@ -163,7 +163,7 @@ export const Carousel = ({
                   },
                 }}
                 key={'card' + index}
-                className="rounded-3xl last:pr-[5%] md:last:pr-[33%]"
+                className="rounded-3xl last:pr-[5%] md:last:pr-[33%] border dark:border-gray-700 "
               >
                 {item}
               </motion.div>
@@ -172,14 +172,14 @@ export const Carousel = ({
         </div>
         <div className="mr-10 flex justify-end gap-2 md:mr-20">
           <button
-            className="relative z-40 flex h-10 w-10 items-center justify-center rounded-full bg-gray-100 disabled:opacity-50"
+            className="relative z-40 flex h-10 w-10 items-center justify-center rounded-full bg-gray-100 disabled:opacity-50 cursor-pointer"
             onClick={scrollLeft}
             disabled={!canScrollLeft}
           >
             <IconArrowNarrowLeft className="h-6 w-6 text-gray-500" />
           </button>
           <button
-            className="relative z-40 flex h-10 w-10 items-center justify-center rounded-full bg-gray-100 disabled:opacity-50"
+            className="relative z-40 flex h-10 w-10 items-center justify-center rounded-full bg-gray-100 disabled:opacity-50 cursor-pointer"
             onClick={scrollRight}
             disabled={!canScrollRight}
           >

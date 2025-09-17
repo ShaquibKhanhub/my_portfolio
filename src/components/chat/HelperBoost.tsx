@@ -1,13 +1,13 @@
-import { Button } from '@/components/ui/button';
-import { Separator } from '@/components/ui/separator';
-import { cn } from '@/lib/utils';
+import { Button } from "@/components/ui/button";
+import { Separator } from "@/components/ui/separator";
+import { cn } from "@/lib/utils";
 import {
   Tooltip,
   TooltipContent,
   TooltipProvider,
   TooltipTrigger,
-} from '@radix-ui/react-tooltip';
-import { motion } from 'framer-motion';
+} from "@radix-ui/react-tooltip";
+import { motion } from "framer-motion";
 import {
   BriefcaseBusiness,
   BriefcaseIcon,
@@ -25,11 +25,11 @@ import {
   Sparkles,
   UserRoundSearch,
   UserSearch,
-} from 'lucide-react';
-import { useState } from 'react';
-import { Drawer } from 'vaul';
-import { PresetReply } from '@/components/chat/preset-reply';
-import { presetReplies } from '@/lib/config-loader';
+} from "lucide-react";
+import { useState } from "react";
+import { Drawer } from "vaul";
+import { PresetReply } from "@/components/chat/preset-reply";
+import { presetReplies } from "@/lib/config-loader";
 
 interface HelperBoostProps {
   submitQuery?: (query: string) => void;
@@ -38,78 +38,78 @@ interface HelperBoostProps {
 }
 
 const questions = {
-  Me: 'Who are you? I want to know more about you.',
-  Projects: 'What are your projects? What are you working on right now?',
-  Skills: 'What are your skills? Give me a list of your soft and hard skills.',
-  Resume: 'Can I see your resume?',
+  Me: "Who are you? I want to know more about you.",
+  Projects: "What are your projects? What are you working on right now?",
+  Skills: "What are your skills? Give me a list of your soft and hard skills.",
+  Resume: "Can I see your resume?",
   Contact:
     'How can I reach you? What kind of project would make you say "yes" immediately?',
 };
 
 const questionConfig = [
-  { key: 'Me', color: '#329696', icon: Laugh },
-  { key: 'Projects', color: '#3E9858', icon: BriefcaseBusiness },
-  { key: 'Skills', color: '#856ED9', icon: Layers },
-  { key: 'Resume', color: '#D97856', icon: FileText },
-  { key: 'Contact', color: '#C19433', icon: UserRoundSearch },
+  { key: "Me", color: "#329696", icon: Laugh },
+  { key: "Projects", color: "#3E9858", icon: BriefcaseBusiness },
+  { key: "Skills", color: "#856ED9", icon: Layers },
+  { key: "Resume", color: "#D97856", icon: FileText },
+  { key: "Contact", color: "#C19433", icon: UserRoundSearch },
 ];
 
 // Helper drawer data
 const specialQuestions = [
-  'Who are you?',
-  'Can I see your resume?',
-  'What projects are you most proud of?',
-  'What are your skills?',
-  'How can I reach you?',
+  "Who are you?",
+  "Can I see your resume?",
+  "What projects are you most proud of?",
+  "What are your skills?",
+  "How can I reach you?",
 ];
 
 const questionsByCategory = [
   {
-    id: 'me',
-    name: 'Me',
+    id: "me",
+    name: "Me",
     icon: UserSearch,
     questions: [
-      'Who are you?',
-      'What are your passions?',
-      'How did you get started in tech?',
-      'Where do you see yourself in 5 years?',
+      "Who are you?",
+      "What are your passions?",
+      "How did you get started in tech?",
+      "Where do you see yourself in 5 years?",
     ],
   },
   {
-    id: 'professional',
-    name: 'Professional',
+    id: "professional",
+    name: "Professional",
     icon: BriefcaseIcon,
     questions: [
-      'Can I see your resume?',
-      'What makes you a valuable team member?',
-      'Where are you working now?',
-      'Why should I hire you?',
+      "Can I see your resume?",
+      "What makes you a valuable team member?",
+      "Where are you working now?",
+      "Why should I hire you?",
       "What's your educational background?",
     ],
   },
   {
-    id: 'projects',
-    name: 'Projects',
+    id: "projects",
+    name: "Projects",
     icon: CodeIcon,
-    questions: ['What projects are you most proud of?'],
+    questions: ["What projects are you most proud of?"],
   },
   {
-    id: 'skills',
-    name: 'Skills',
+    id: "skills",
+    name: "Skills",
     icon: GraduationCapIcon,
     questions: [
-      'What are your skills?',
-      'How was your experience working as freelancer?',
+      "What are your skills?",
+      "How was your experience working as freelancer?",
     ],
   },
   {
-    id: 'contact',
-    name: 'Contact & Future',
+    id: "contact",
+    name: "Contact & Future",
     icon: MailIcon,
     questions: [
-      'How can I reach you?',
+      "How can I reach you?",
       "What kind of project would make you say 'yes' immediately?",
-      'Where are you located?',
+      "Where are you located?",
     ],
   },
 ];
@@ -123,9 +123,9 @@ const AnimatedChevron = () => {
       }}
       transition={{
         duration: 1.5,
-        ease: 'easeInOut',
+        ease: "easeInOut",
         repeat: Infinity,
-        repeatType: 'loop',
+        repeatType: "loop",
       }}
       className="text-primary mb-1.5"
     >
@@ -145,16 +145,16 @@ export default function HelperBoost({
 
   const handleQuestionClick = (questionKey: string) => {
     const question = questions[questionKey as keyof typeof questions];
-    
+
     // Map question keys to preset replies that match our config exactly
     const presetMapping: { [key: string]: string } = {
-      'Me': 'Who are you?',
-      'Projects': 'What projects are you most proud of?',
-      'Skills': 'What are your skills?',
-      'Resume': 'Can I see your resume?',
-      'Contact': 'How can I reach you?'
+      Me: "Who are you?",
+      Projects: "What projects are you most proud of?",
+      Skills: "What are your skills?",
+      Resume: "Can I see your resume?",
+      Contact: "How can I reach you?",
     };
-    
+
     const presetKey = presetMapping[questionKey];
     if (presetKey && presetReplies[presetKey] && handlePresetReply) {
       const preset = presetReplies[presetKey];
@@ -186,13 +186,13 @@ export default function HelperBoost({
   return (
     <>
       <Drawer.Root open={open} onOpenChange={setOpen}>
-        <div className="w-full">
+        <div className="w-full ">
           {/* Toggle Button */}
           <div
             className={
               isVisible
-                ? 'mb-2 flex justify-center'
-                : 'mb-0 flex justify-center'
+                ? "mb-2 flex justify-center"
+                : "mb-0 flex justify-center"
             }
           >
             <button
@@ -218,7 +218,7 @@ export default function HelperBoost({
             <div className="w-full">
               <div
                 className="flex w-full flex-wrap gap-1 md:gap-3"
-                style={{ justifyContent: 'safe center' }}
+                style={{ justifyContent: "safe center" }}
               >
                 {questionConfig.map(({ key, color, icon: Icon }) => (
                   <Button
@@ -229,7 +229,9 @@ export default function HelperBoost({
                   >
                     <div className="flex items-center gap-3 text-gray-700">
                       <Icon size={18} strokeWidth={2} color={color} />
-                      <span className="text-sm font-medium">{key}</span>
+                      <span className="text-sm font-medium dark:text-white">
+                        {key}
+                      </span>
                     </div>
                   </Button>
                 ))}
@@ -246,7 +248,7 @@ export default function HelperBoost({
                         >
                           <div className="flex items-center gap-3 text-gray-700">
                             <CircleEllipsis
-                              className="h-[20px] w-[18px]"
+                              className="h-[20px] w-[18px] dark:text-white"
                               //style={{ color: '#3B82F6' }}
                               strokeWidth={2}
                             />
@@ -269,14 +271,14 @@ export default function HelperBoost({
         <Drawer.Portal>
           <Drawer.Overlay className="fixed inset-0 z-100 bg-black/60 backdrop-blur-xs" />
           <Drawer.Content className="fixed right-0 bottom-0 left-0 z-100 mt-24 flex h-[80%] flex-col rounded-t-[10px] bg-gray-100 outline-none lg:h-[60%]">
-            <div className="flex-1 overflow-y-auto rounded-t-[10px] bg-white p-4">
+            <div className="flex-1 overflow-y-auto rounded-t-[10px] bg-white p-4 dark:bg-neutral-900">
               <div className="mx-auto max-w-md space-y-4">
                 <div
                   aria-hidden
                   className="mx-auto mb-8 h-1.5 w-12 flex-shrink-0 rounded-full bg-gray-300"
                 />
                 <div className="mx-auto w-full max-w-md">
-                  <div className="space-y-8 pb-16">
+                  <div className="space-y-8 pb-16 ">
                     {questionsByCategory.map((category) => (
                       <CategorySection
                         key={category.id}
@@ -315,12 +317,12 @@ function CategorySection({
     <div className="space-y-3">
       <div className="flex items-center gap-2.5 px-1">
         <Icon className="h-5 w-5" />
-        <Drawer.Title className="text-[22px] font-medium text-gray-900">
+        <Drawer.Title className="text-[22px] font-medium text-gray-900 dark:text-white">
           {name}
         </Drawer.Title>
       </div>
 
-      <Separator className="my-4" />
+      <Separator className="my-4 dark:bg-neutral-500"  />
 
       <div className="space-y-3">
         {questions.map((question, index) => (
@@ -349,41 +351,41 @@ function QuestionItem({ question, onClick, isSpecial }: QuestionItemProps) {
   return (
     <motion.button
       className={cn(
-        'flex w-full items-center justify-between rounded-[10px]',
-        'text-md px-6 py-4 text-left font-normal',
-        'transition-all',
-        'focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500',
-        isSpecial ? 'bg-black' : 'bg-[#F7F8F9]'
+        "flex w-full items-center justify-between rounded-[10px] ",
+        "text-md px-6 py-4 text-left font-normal",
+        "transition-all",
+        "focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 ",
+        isSpecial ? "bg-black  " : "bg-[#F7F8F9] dark:bg-black"
       )}
       onClick={onClick}
       onHoverStart={() => setIsHovered(true)}
       onHoverEnd={() => setIsHovered(false)}
       whileHover={{
-        backgroundColor: isSpecial ? undefined : '#F0F0F2',
+        backgroundColor: isSpecial ? undefined : "#F0F0F2  dark:bg-black",
       }}
       whileTap={{
         scale: 0.98,
-        backgroundColor: isSpecial ? undefined : '#E8E8EA',
+        backgroundColor: isSpecial ? undefined : "#E8E8EA dark:bg-black",
       }}
     >
-      <div className="flex items-center">
+      <div className="flex items-center  ">
         {isSpecial && <Sparkles className="mr-2 h-4 w-4 text-white" />}
-        <span className={isSpecial ? 'font-medium text-white' : ''}>
+        <span className={isSpecial ? "font-medium text-white" : ""}>
           {question}
         </span>
       </div>
       <motion.div
         animate={{ x: isHovered ? 4 : 0 }}
         transition={{
-          type: 'spring',
+          type: "spring",
           stiffness: 400,
           damping: 25,
         }}
       >
         <ChevronRight
           className={cn(
-            'h-5 w-5 shrink-0',
-            isSpecial ? 'text-white' : 'text-primary'
+            "h-5 w-5 shrink-0 dark:white",
+            isSpecial ? "text-white " : "text-primary"
           )}
         />
       </motion.div>

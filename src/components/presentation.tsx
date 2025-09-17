@@ -1,9 +1,10 @@
-'use client';
+"use client";
 
-import { motion } from 'framer-motion';
-import Image from 'next/image';
-import React from 'react';
-import { profileInfo } from '@/lib/config-loader';
+import { motion } from "framer-motion";
+import Image from "next/image";
+import React from "react";
+import { profileInfo } from "@/lib/config-loader";
+import { ThemeToggle } from "./ThemeToggle";
 
 export function Presentation() {
   // Personal information now loaded from configuration
@@ -15,7 +16,7 @@ export function Presentation() {
     visible: {
       opacity: 1,
       y: 0,
-      transition: { duration: 0.6, ease: 'easeOut' },
+      transition: { duration: 0.6, ease: "easeOut" },
     },
   };
 
@@ -27,7 +28,7 @@ export function Presentation() {
       y: 0,
       transition: {
         duration: 0.6,
-        ease: 'easeOut',
+        ease: "easeOut",
         delay: 0.2,
       },
     },
@@ -50,7 +51,7 @@ export function Presentation() {
                 alt={profile.name}
                 width={500}
                 height={500}
-                 className="h-full w-full object-cover object-top  "
+                className="h-full w-full object-cover object-top  "
                 onError={(e) => {
                   // Fallback to placeholder if image fails to load
                   const target = e.target as HTMLImageElement;
@@ -94,16 +95,24 @@ export function Presentation() {
             transition={{ delay: 0.6, duration: 0.5 }}
             className="mt-4 flex flex-wrap gap-2"
           >
-            {['AI Engineer', 'Python Developer', 'IoT Specialist', 'ML Engineer', 'Freelancer'].map(
-              (tag) => (
-                <span
-                  key={tag}
-                  className="bg-secondary text-secondary-foreground rounded-full px-3 py-1 text-sm"
-                >
-                  {tag}
-                </span>
-              )
-            )}
+            {[
+              " Front-End Developer",
+
+              "React.js Developer",
+
+              "Next.js Developer",
+
+              "Tailwind CSS Specialist",
+
+              "MERN Stack (Frontend + API Integration)",
+            ].map((tag) => (
+              <span
+                key={tag}
+                className="bg-secondary text-secondary-foreground rounded-full px-3 py-1 text-sm hover:scale-110 transition-transform duration-300"
+              >
+                {tag}
+              </span>
+            ))}
           </motion.div>
         </div>
       </div>
