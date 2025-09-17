@@ -97,6 +97,11 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://your-portfolio-url.com", // 🔴 update
   },
+
+  viewport: {
+    width: "device-width",
+    initialScale: 1,
+  },
 };
 
 export default function RootLayout({
