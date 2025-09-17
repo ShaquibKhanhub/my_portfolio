@@ -1,0 +1,397 @@
+{
+  "personal": {
+    "name": "Shaquib Khan",
+    "age": 22,
+    "location": "Dhanbad, Jharkhand, India",
+    "title": "Front-End Developer",
+    "email": "shaquibkhanrdx34@gmail.com",
+    "handle": "@shaquib_khann",
+    "bio": "Hey 👋\nI'm Shaquib, a creative and detail-oriented Front-End Developer with hands-on experience in building scalable and responsive web applications. Currently pursuing BCA at BBMKU University, I’m passionate about crafting intuitive, dynamic, and user-friendly interfaces using modern technologies like React, Next.js, and Tailwind CSS. I love solving real-world problems through clean code and seamless user experiences.",
+    "avatar": "/1.png",
+    "avatar2": "/2.jpg",
+    "fallbackAvatar": "https://images.unsplash.com/photo-1610216705422-caa3fcb6d158?q=80&w=3560&auto=format&fit=crop&ixlib=rb-4.0.3"
+  },
+  "education": {
+    "current": {
+      "degree": "Bachelor of Computer Applications (BCA)",
+      "institution": "BBMKU University, Dhanbad",
+      "duration": "2024 – 2027",
+      "cgpa": "N/A",
+      "graduationDate": "2027"
+    },
+    "achievements": [
+      "Completed freeCodeCamp Responsive Web Design Certification",
+      "Completed freeCodeCamp JavaScript Algorithms and Data Structures Certification",
+      "Completed freeCodeCamp Front-End Development Libraries Certification"
+    ]
+  },
+  "experience": [
+    {
+      "company": "Rablo Learning Private Limited",
+      "position": "Front-End Developer Intern",
+      "type": "Internship",
+      "duration": "Nov 2024 – Feb 2025 | Remote",
+      "description": "Collaborated with team to develop scalable and responsive user interfaces using React, Redux, and Tailwind CSS. Built reusable components and participated in sprint planning.",
+      "technologies": ["React", "Redux", "Tailwind CSS"]
+    },
+    {
+      "company": "Jan Elaaj",
+      "position": "Front-End Developer Intern",
+      "type": "Internship",
+      "duration": "Mar 2025 – May 2025 | Remote",
+      "description": "Developed user-friendly interfaces, integrated APIs, and maintained scalable front-end code.",
+      "technologies": ["React", "Tailwind CSS", "APIs"]
+    },
+    {
+      "company": "Kasoclo",
+      "position": "Front-End Developer Intern",
+      "type": "Internship",
+      "duration": "May 2025 – July 2025 | Remote",
+      "description": "Built production-level UI components, improved performance, and learned CI/CD pipelines.",
+      "technologies": ["React", "Tailwind CSS", "CI/CD"]
+    },
+    {
+      "company": "Vaishali Technologies",
+      "position": "Full-Stack Developer Intern",
+      "type": "Internship",
+      "duration": "July 2025 – Present | Remote",
+      "description": "Developed full-stack features using React.js, Node.js, and MongoDB. Implemented RESTful APIs and optimized frontend performance.",
+      "technologies": ["React.js", "Node.js", "MongoDB"]
+    }
+  ],
+  "skills": {
+    "programming": [],
+    "ml_ai": [],
+    "web_development": [],
+    "iot_hardware": [],
+    "frontend": [
+      "HTML5",
+      "CSS",
+      "SASS",
+      "JavaScript (ES6+)",
+      "React.js",
+      "Redux",
+      "Tailwind CSS"
+    ],
+    "backend": ["Node.js", "Express.js"],
+    "databases": ["MongoDB", "PostgreSQL", "Firebase"],
+    "devops_cloud": [
+      "Git",
+      "GitHub",
+      "VSCode",
+      "Netlify",
+      "Vercel",
+      "Postman",
+      "Jira",
+      "CI/CD",
+      "Jest (Frontend Testing)"
+    ],
+    "soft_skills": [
+      "Team Collaboration",
+      "Problem Solving",
+      "Time Management",
+      "Adaptability",
+      "Learning Agility"
+    ]
+  },
+  "projects": [
+    {
+      "title": "Next Drive",
+      "category": "Web App",
+      "description": "Modern file management app inspired by Google Drive. Enabled document sharing and CRUD operations.",
+      "techStack": [
+        "Next.js",
+        "React.js",
+        "Tailwind CSS",
+        "Appwrite",
+        "PostgreSQL"
+      ],
+      "date": "2025",
+      "status": "Completed",
+      "featured": true,
+      "links": [
+        {
+          "name": "Live Site",
+          "url": "https://next-drive-mu.vercel.app/"
+        },
+        {
+          "name": "GitHub",
+          "url": "https://github.com/shaquibkhan/next-drive"
+        }
+      ],
+      "images": [
+        {
+          "src": "/next-drive.png",
+          "alt": "Next Drive Homepage"
+        }
+      ]
+    },
+    {
+      "title": "Notion Clone",
+      "category": "Web App",
+      "description": "Collaborative note-taking app with real-time editing, featuring page updates and seamless data management.",
+      "techStack": [
+        "Next.js",
+        "Zustand",
+        "Tailwind CSS",
+        "Convex",
+        "TypeScript"
+      ],
+      "date": "2025",
+      "status": "Completed",
+      "featured": true,
+      "links": [
+        {
+          "name": "Live Site",
+          "url": "https://notes-app-kappa-five.vercel.app/"
+        },
+        {
+          "name": "GitHub",
+          "url": "https://github.com/shaquibkhan/notion-clone"
+        }
+      ],
+      "images": [
+        {
+          "src": "/notion.png",
+          "alt": "Notion Clone Homepage"
+        },
+        {
+          "src": "/notion2.png",
+          "alt": "Notion  "
+        }
+      ]
+    },
+    {
+      "title": "Crypto Currency App",
+      "category": "Web App",
+      "description": "Live market data app with responsive UI, built using ReactJS and Chakra UI.",
+      "techStack": ["React.js", "Chakra UI"],
+      "date": "2024",
+      "status": "Completed",
+      "featured": false,
+      "links": [
+        {
+          "name": "Live Site",
+          "url": "https://react-crypto-dual-theme-app.vercel.app/"
+        },
+        {
+          "name": "GitHub",
+          "url": "https://github.com/shaquibkhan/crypto-app"
+        }
+      ],
+      "images": [
+        {
+          "src": "/crypto.png",
+          "alt": "Crypto Homepage"
+        },
+        {
+          "src": "/crypto2.png",
+          "alt": "Cryptos"
+        },
+        {
+          "src": "/crypto3.png",
+          "alt": "Crypto Graph Page"
+        }
+      ]
+    },
+    {
+      "title": "ResumeME",
+      "category": "Web App",
+      "description": "AI-powered resume analyzer that provides ATS score checks, improvement tips, and smart feedback based on job descriptions.",
+      "techStack": [
+        "React.js",
+        "TypeScript",
+        "Tailwind CSS",
+        "Puter API",
+        "AI Models"
+      ],
+      "date": "2025",
+      "status": "Completed",
+      "featured": true,
+      "links": [
+        {
+          "name": "Live Site",
+          "url": "https://ai-resume-checker-ivory.vercel.app/"
+        },
+        {
+          "name": "GitHub",
+          "url": "https://github.com/ShaquibKhanhub/ai-resume-checker.git"
+        }
+      ],
+      "images": [
+        {
+          "src": "/resumeME2.png",
+          "alt": "ResumeME Homepage"
+        },
+        {
+          "src": "/resumeME.png",
+          "alt": "ResumeME Homepage"
+        }
+      ]
+    },
+    {
+      "title": "Mock AI Interview",
+      "category": "Web App",
+      "description": "An AI-powered web application that helps users practice and prepare for job interviews. It simulates real interview environments by generating AI-driven questions, evaluating responses, and providing structured feedback. The app also includes features such as role-specific interviews, form validation, dark/light themes, and real-time interaction with AI.",
+      "techStack": [
+        "Next.js",
+        "React.js",
+        "Tailwind CSS",
+        "Firebase",
+        "AI SDK",
+        "Zod",
+        "React Hook Form",
+        "Radix UI",
+        "Lucide React"
+      ],
+      "date": "2025",
+      "status": "Completed",
+      "featured": true,
+      "links": [
+        {
+          "name": "Live Site",
+          "url": "https://mock-ai-interview-two.vercel.app/"
+        },
+        {
+          "name": "GitHub",
+          "url": "https://github.com/ShaquibKhanhub/mock_ai_interview.git"
+        }
+      ],
+      "images": [
+        {
+          "src": "/mock-ai.png",
+          "alt": "Mock AI Homepage"
+        },
+        {
+          "src": "/mock-ai2.png",
+          "alt": "Mock AI Calling"
+        }
+      ]
+    },
+    {
+      "title": "Object Detection App",
+      "category": "Web App",
+      "description": "A real-time object detection web application that uses TensorFlow.js and the COCO-SSD model to identify and classify objects directly from a webcam feed. Built with Next.js and React, the app provides an interactive way to visualize AI-powered computer vision running entirely in the browser.",
+      "techStack": [
+        "Next.js",
+        "React.js",
+        "TensorFlow.js",
+        "COCO-SSD",
+        "React Webcam",
+        "Tailwind CSS"
+      ],
+      "date": "2025",
+      "status": "Completed",
+      "featured": true,
+      "links": [
+        {
+          "name": "Live Site",
+          "url": "https://object-detector-ashen.vercel.app/"
+        },
+        {
+          "name": "GitHub",
+          "url": "https://github.com/ShaquibKhanhub/object-detector.git"
+        }
+      ],
+      "images": []
+    }
+  ],
+  "social": {
+    "linkedin": "https://www.linkedin.com/in/shaquib-khan-48a532236/",
+    "github": "https://github.com/ShaquibKhanhub",
+    "twitter": "https://x.com/RDX32778024",
+    "portfolio": "https://portfolio.shaquibkhan.com",
+    "leetcode": "https://leetcode.com/u/Shaquib-Khan/"
+  },
+  "internship": {
+    "seeking": true,
+    "duration": "6 months",
+    "startDate": "September 2025",
+    "preferredLocation": "Remote or On-site",
+    "focusAreas": ["Front-End Development", "Full-Stack Development"],
+    "availability": "Available for immediate start",
+    "workStyle": "Collaborative, detail-oriented, problem solver",
+    "goals": "Contribute to innovative projects, enhance user experience, and grow as a full-stack engineer."
+  },
+  "personality": {
+    "traits": ["creative", "detail-oriented", "collaborative", "adaptable"],
+    "interests": ["Web Development", "UI/UX", "Open Source", "Problem Solving"],
+    "funFacts": [
+      "Completed 3 major certifications from freeCodeCamp",
+      "Built multiple real-world projects including a Notion clone and Next Drive",
+      "Passionate about crafting clean, scalable, and reusable code"
+    ],
+    "workingStyle": "I write clean code, iterate fast, and focus on delivering impact.",
+    "motivation": "Building web apps that simplify tasks and improve user experience."
+  },
+  "resume": {
+    "title": "Shaquib Khan - Resume",
+    "description": "Front-End Developer | BCA Student | Experienced in React, Next.js, and Tailwind CSS",
+    "fileType": "PDF",
+    "lastUpdated": "August 2025",
+    "fileSize": "2 MB",
+    "downloadUrl": "/shaquib_khan.pdf",
+    "previewImageSrc": "/resume_preview.png"
+  },
+  "chatbot": {
+    "name": "Shaquib",
+    "personality": "friendly, professional, tech-focused",
+    "tone": "clear and concise",
+    "language": "english",
+    "responseStyle": "short and interactive",
+    "useEmojis": true,
+    "topics": [
+      "projects",
+      "skills",
+      "experience",
+      "internship",
+      "contact",
+      "fun_facts"
+    ]
+  },
+  "presetQuestions": {
+    "me": [
+      "Who are you?",
+      "Tell me about yourself",
+      "What's your background?",
+      "What are your passions?",
+      "How did you get started in tech?",
+      "Where do you see yourself in 5 years?"
+    ],
+    "professional": [
+      "What are your skills?",
+      "Can I see your resume?",
+      "What's your experience?",
+      "Are you looking for internships?",
+      "Where are you working now?",
+      "Why should I hire you?",
+      "What's your educational background?",
+      "How was your experience working as an intern?"
+    ],
+    "projects": [
+      "What projects are you most proud of?",
+      "What are your projects?",
+      "Tell me about your best project",
+      "What are you working on?"
+    ],
+    "contact": [
+      "How can I reach you?",
+      "How can I contact you?",
+      "What's your email?",
+      "Where can I find you online?",
+      "What kind of project excites you?",
+      "Where are you located?"
+    ],
+    "fun": [
+      "What are your hobbies?",
+      "Tell me something interesting about you",
+      "What motivates you?"
+    ]
+  },
+  "meta": {
+    "configVersion": "1.0",
+    "lastUpdated": "2025-08-26",
+    "generatedBy": "Shaquib Khan",
+    "description": "Complete portfolio configuration for Shaquib Khan - Front-End Developer"
+  }
+}
