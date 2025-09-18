@@ -58,9 +58,9 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: "https://shaquib-dev.vercel.app/", // 🔴 update
     title:
-      "Shaquib Khan - Full-stack Python Developer & AI Engineer | Professional Portfolio",
+      "Shaquib Khan – Front-End Developer & MERN Stack Enthusiast | Professional Portfolio",
     description:
-      "Professional portfolio showcasing AI-powered projects, IoT systems, and full-stack development. Available for internships.",
+      "Professional portfolio showcasing MERN stack projects, responsive designs, and modern web applications.",
     siteName: "Shaquib Khan Portfolio",
     images: [
       {
@@ -74,9 +74,10 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Shaquib Khan - Full-stack Python Developer & AI Engineer",
+    title: "Shaquib Khan - Frontend Developer & MERN Stack Enthusiast",
     description:
-      "Professional portfolio showcasing AI projects, IoT systems, and automation solutions.",
+      "Portfolio showcasing modern web applications, responsive UI designs, and MERN stack projects. Open to internships and freelance opportunities.",
+
     creator: "@shaquib_khann", // 🔴 update
     site: "@shaquib_khann", // 🔴 update
     images: [

@@ -218,7 +218,7 @@ const AvailabilityCard = ({ data }: AvailabilityCardProps) => {
           that{" "}
           {data?.lookingFor.impactfulWork ||
             "solve real-world problems and make a meaningful impact"}
-          . I'm passionate, adaptable, and ready to contribute to{" "}
+          . I&apos;m passionate, adaptable, and ready to contribute to{" "}
           {data?.lookingFor.collaboration ||
             "collaborative, innovative environments"}
           ! 🚀
