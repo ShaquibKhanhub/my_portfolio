@@ -48,7 +48,7 @@ export const metadata: Metadata = {
   authors: [
     {
       name: "Shaquib Khan",
-      url: "https://shaquib-dev.vercel.app/", // 🔴 update
+      url: "https://shaquibkhan.vercel.app/", // 🔴 update
     },
   ],
   creator: "Shaquib Khan",
