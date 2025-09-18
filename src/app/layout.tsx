@@ -20,38 +20,35 @@ export const metadata: Metadata = {
     template: "%s | Shaquib Khan Portfolio",
   },
   description:
-    "Professional portfolio of Shaquib Khan - Full-stack Python Developer & AI Engineer. Showcasing automation projects, IoT systems, and AI-powered solutions. Available for internships.",
+    "Professional portfolio of Shaquib Khan – Front-End Developer & MERN Stack Enthusiast. Showcasing modern web applications, UI designs, and real-world projects. Open to internships and freelance opportunities.",
   keywords: [
     "Shaquib Khan",
-    "Full-stack Developer",
-    "Python Developer",
-    "AI Engineer",
+    "Frontend Developer",
+    "MERN Stack Developer",
+    "React Developer",
+    "Next.js Developer",
     "Portfolio",
-    "Software Developer",
-    "Machine Learning",
-    "IoT Developer",
-    "Web Development",
-    "Next.js",
-    "React",
-    "FastAPI",
-    "Django",
-    "Automation",
-    "LangChain",
-    "Hackathon",
+    "Web Developer India",
+    "Tailwind CSS",
+    "JavaScript",
+    "TypeScript",
+    "Responsive Web Design",
+    "UI Developer",
+    "Frontend Engineer",
+    "Web Applications",
     "Freelancer",
-    "AI Chatbot",
+    "Internship",
     "Professional Portfolio",
     "Developer Portfolio",
     "Tech Portfolio",
-    "Internship",
-    "Python Automation",
-    "Web Scraping",
-    "API Development",
+    "API Integration",
+    "Shaquib Portfolio",
   ],
+
   authors: [
     {
       name: "Shaquib Khan",
-      url: "https://your-portfolio-url.com", // 🔴 update
+      url: "https://shaquib-dev.vercel.app/", // 🔴 update
     },
   ],
   creator: "Shaquib Khan",
@@ -59,7 +56,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://your-portfolio-url.com", // 🔴 update
+    url: "https://shaquib-dev.vercel.app/", // 🔴 update
     title:
       "Shaquib Khan - Full-stack Python Developer & AI Engineer | Professional Portfolio",
     description:
@@ -67,7 +64,7 @@ export const metadata: Metadata = {
     siteName: "Shaquib Khan Portfolio",
     images: [
       {
-        url: "https://your-portfolio-url.com/portfolio.png", // 🔴 update
+        url: "https://shaquib-dev.vercel.app/portfolio.png", // 🔴 update
         width: 1200,
         height: 630,
         alt: "Shaquib Khan - Professional Portfolio ",
@@ -80,8 +77,8 @@ export const metadata: Metadata = {
     title: "Shaquib Khan - Full-stack Python Developer & AI Engineer",
     description:
       "Professional portfolio showcasing AI projects, IoT systems, and automation solutions.",
-    creator: "@yourhandle", // 🔴 update
-    site: "@yourhandle", // 🔴 update
+    creator: "@shaquib_khann", // 🔴 update
+    site: "@shaquib_khann", // 🔴 update
     images: [
       {
         url: "https://your-portfolio-url.com/portfolio.png", // 🔴 update

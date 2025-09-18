@@ -306,13 +306,13 @@ const Chat = () => {
   return (
     <div className="relative h-screen overflow-hidden dark:bg-black">
       {/* Fixed Avatar Header with Gradient */}
-      <div
-        className="
+     <div
+  className="
     fixed top-0 right-0 left-0 z-50
     bg-[linear-gradient(to_bottom,rgba(255,255,255,1)_0%,rgba(255,255,255,0.95)_30%,rgba(255,255,255,0.8)_50%,rgba(255,255,255,0)_100%)]
     dark:bg-none
   "
-      >
+>
         <div
           className={`transition-all duration-300 ease-in-out ${hasActiveTool ? "pt-6 pb-0" : "py-6"}`}
         >
